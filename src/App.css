@@ -1,5 +1,6 @@
 .header-main{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 20px 30px;
@@ -148,4 +149,14 @@ padding: 10px 20px;
 }
 .loader{
   text-align: center;
+}
+
+@media screen and (max-width: 650px){
+  .all-notes{
+    grid-template-columns: 1fr;
+  }
+.header-main{
+  height: 70px;
+}
+  
 }
