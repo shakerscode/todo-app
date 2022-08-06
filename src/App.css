@@ -1,38 +1,148 @@
-.App {
+.header-main{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  height: 50px;
+  box-shadow:  5px 0px 10px #bebebe;
+  z-index: 20;
+}
+.logo-sec{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.logo-sec img{
+  width: 40px;
+  height: 40px;
+}
+.logo-sec h1{
+  color: #ffd861;
+}
+.writing-box-main{
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+.writing-box{
+  height: 80px;
+  width: 250px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  gap: 10px;
+  cursor: pointer;
+  box-shadow:  5px 0px 10px #bebebe;
+  font-size: 20px;
+  background-color: #ffe082;
+}
+.divider{
+  width: 40%;
+  margin: auto;
+}
+
+.note-box{
+
+}
+.empty-box-text{
   text-align: center;
+  padding-top: 20px;
+  font-size: 18px;
+  color: #bebebe;
+}
+.all-notes{
+  width: 90%;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+.post-card{
+  box-shadow:  5px 0px 10px #bebebe;
+  padding: 10px 20px; 
+  border-radius: 10px;
+}
+ 
+.card-icon{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.icon-color{
+  background: #ffe082;
+  padding: 10px;
+  border-radius: 30px;
+  cursor: pointer;
+} 
+.relative{
+  position: relative;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.editor-box{
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.344);
+  z-index: 999;
+  overflow: hidden;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-editor{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+.editor-form{
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center; 
+  gap: 10px;
 }
-
-.App-link {
-  color: #61dafb;
+.editor-form input, textarea{
+  width: 60%;
+  height: 50px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding-left: 10px;
+  font-size: 18px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.editor-form textarea{
+  height: 250px;
+  padding-top: 10px;
+}
+.save-btn{
+  background: #ffe082;
+  cursor: pointer;
+}
+.text-box{
+  text-align: start;
+  height: 150px;
+}
+.text-box h1{
+  background-color: #bebebe2b;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+.text-box p{
+  background-color: #bebebe2b;
+  padding: 5px 10px;
+  border-radius: 20px;
+  height: 60%;
+  margin-top: 10px;
 }
