@@ -11,12 +11,12 @@ const Main = () => {
 
 
     const { isLoading, error, data: notes, refetch } = useQuery(['notes'], () =>
-        fetch('http://localhost:5000/notes').then(res =>
+        fetch('https://powerful-garden-20229.herokuapp.com/notes').then(res =>
             res.json()
         )
     )
     if (isLoading) {
-        <p>Loading...</p>
+        <p className='loader'>Loading...</p>
     }
     if(error){
         console.log(error);
@@ -34,7 +34,7 @@ const Main = () => {
             body: JSON.stringify(data)
         }
 
-        fetch('http://localhost:5000/notes', requestOptions)
+        fetch('https://powerful-garden-20229.herokuapp.com/notes', requestOptions)
             .then(res => res.json())
             .then(data =>{ 
                 refetch()
@@ -43,23 +43,7 @@ const Main = () => {
             })
 
     }
-
-    // const handleSavePost = (event, id) => {
-    //     event.preventDefault()
-    //     const title = event.target.title.value;
-    //     const post = event.target.post.value;
-    //     const data = { title: title, post: post }
-        
-    //     // const requestOptions = {
-    //     //     method: 'PUT',
-    //     //     headers: { 'content-type': 'application/json' },
-    //     //     body: JSON.stringify(data)
-    //     // }
-    //     console.log(id);
-    //     // fetch(`http://localhost:5000/notes/id=${_id}`, requestOptions)
-    //     //     .then(res => res.json())
-    //     //     .then(data => console.log(data))
-    // }
+ 
     return (
         <section className='relative'>
             <div className='writing-box-main'>

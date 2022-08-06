@@ -7,7 +7,7 @@ const PostCard = ({ note, setOpenEdit, refetch }) => {
     const handleDelete = (id) => {
         const proceed = window.confirm('Are you sure you want to delete this note?')
         if (proceed) {
-            fetch(`http://localhost:5000/notes/${id}`, {
+            fetch(`https://powerful-garden-20229.herokuapp.com/notes/${id}`, {
                 method: 'DELETE',
             })
                 .then(res => res.json())

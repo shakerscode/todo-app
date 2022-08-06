@@ -2,9 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Project Intro
 
-In the project directory, you can run:
+This is a basic todo app. No more functionality add here with out CRUD operation.
 
 ### `npm start`
 

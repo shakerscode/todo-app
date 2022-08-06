@@ -13,7 +13,7 @@ const EditModal = ({openEdit, setOpenEdit, refetch}) => {
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(data)
         }
-        fetch(`http://localhost:5000/notes/${id}`, requestOptions)
+        fetch(`https://powerful-garden-20229.herokuapp.com/notes/${id}`, requestOptions)
             .then(res => res.json())
             .then(data =>{
                 setOpenEdit(false)
