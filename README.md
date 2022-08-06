@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Project Intro
 
-This is a basic todo app. No more functionality add here with out CRUD operation.
+> This is a basic todo app. No more functionality add here with out CRUD operation.
 
 ### `npm start`
 
